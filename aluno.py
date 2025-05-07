@@ -12,12 +12,12 @@ class Aluno(Pessoa):
     def matricular(self) -> None:
         print(f"Aluno {self.nome} com matrícula {self.__matricula} foi matriculado com sucesso.")
 
+
+    
     @property
     def matricula(self) -> str:
-
         return self.__matricula
 
     @matricula.setter
     def matricula(self, nova_matricula: str) -> None:
-      
         self.__matricula = nova_matricula
